@@ -1,6 +1,6 @@
 export const generateStripeTexture = (
   text: string,
-  colors = { main: '#ffa1a1', secondary: 'blue' }
+  colors = { main: '#ffa1a1', secondary: 'blue' },
 ): HTMLCanvasElement => {
   const copyAmount = 2;
   const canvasSize = 640;

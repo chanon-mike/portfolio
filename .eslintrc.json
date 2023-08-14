@@ -9,6 +9,7 @@
   ],
   "plugins": ["@typescript-eslint", "react"],
   "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["next.config.js", "postcss.config.js"],
   "env": {
     "browser": true,
     "node": true,

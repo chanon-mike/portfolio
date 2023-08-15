@@ -21,10 +21,11 @@ const navLinks: NavLink[] = [
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [menuToggle, setMenuToggle] = useState(false);
+  const [isHover, setIsHover] = useState(false);
 
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 z-20">
-      <div className="w-full flex justify-between items-center max-w-10xl mx-auto px-10 font-mono text-[16px] text-text">
+    <nav className="w-full flex items-center py-5 fixed top-0 z-20 font-mono">
+      <div className="w-full flex justify-between items-center max-w-10xl mx-auto px-10 text-[16px] text-text">
         <Link
           href="/"
           className="w-max flex items-center gap-2"
@@ -32,9 +33,19 @@ const Navbar = () => {
             setActive('');
             window.scrollTo(0, 0);
           }}
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
         >
           <span>
-            <HiOutlineComputerDesktop color="white" fontSize="1.5em" />
+            <HiOutlineComputerDesktop
+              color="white"
+              fontSize="1.5em"
+              className={`${
+                isHover
+                  ? 'rotate-45 transition-transform duration-300 ease-in-out'
+                  : 'rotate-0 transition-transform duration-300 ease-in-out'
+              }`}
+            />
           </span>
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 pr-2 border-r-white">
             chanon_mike

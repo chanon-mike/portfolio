@@ -7,7 +7,8 @@ const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin']
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={ubuntu.className}>
-      <Component {...pageProps} />;
+      {/* <main className="font-mono"> */}
+      <Component {...pageProps} />
     </main>
   );
 }

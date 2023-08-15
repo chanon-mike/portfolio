@@ -36,6 +36,7 @@ const config: Config = {
           },
         },
       },
+
       animation: {
         typing: 'typing 3.5s steps(20) infinite alternate, blink .7s infinite',
       },

@@ -5,8 +5,12 @@ import type { NavLink } from '../types';
 
 const navLinks: NavLink[] = [
   {
-    id: 'about',
-    title: 'About',
+    id: 'overview',
+    title: 'Overview',
+  },
+  {
+    id: 'experiences',
+    title: 'Experiences',
   },
   {
     id: 'skills',
@@ -42,7 +46,7 @@ const Navbar = () => {
               fontSize="1.5em"
               className={`${
                 isHover
-                  ? 'rotate-45 transition-transform duration-300 ease-in-out'
+                  ? '-rotate-12 transition-transform duration-300 ease-in-out scale-110'
                   : 'rotate-0 transition-transform duration-300 ease-in-out'
               }`}
             />

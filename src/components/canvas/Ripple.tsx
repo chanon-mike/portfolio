@@ -16,7 +16,7 @@ const Ripple = () => {
     (x: number, z: number) => {
       return Math.sin(f * (x ** 2 + z ** 2 + t)) * a;
     },
-    [t, f, a]
+    [t, f, a],
   );
 
   const count = 50;

@@ -23,7 +23,7 @@ const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
 
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 z-20">
+    <nav className="w-full flex items-center py-5 fixed top-0 z-20 font-mono">
       <div className="w-full flex justify-between items-center max-w-10xl mx-auto px-10 text-[16px] text-text">
         <Link
           href="/"

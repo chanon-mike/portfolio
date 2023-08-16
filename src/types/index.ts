@@ -15,3 +15,8 @@ export type Experience = {
   description: string[];
   imageSrc: string;
 };
+
+export type Skill = {
+  name: string;
+  icon: string;
+};

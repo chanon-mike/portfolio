@@ -2,7 +2,7 @@ import Experience from '../components/Experience';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Overview from '../components/Overview';
-import Skills from '../components/Skills';
+import Skill from '../components/Skill';
 import StarsCanvas from '../components/canvas/Stars';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
           <Overview />
           <Experience />
         </div>
-        <Skills />
+        <Skill />
       </div>
     </>
   );

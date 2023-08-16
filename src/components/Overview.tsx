@@ -10,7 +10,7 @@ const bio: Bio[] = [
   },
   {
     year: '2019',
-    event: 'Exchange in Siatama via YFU Full Scholarship',
+    event: 'Exchange in Saitama via YFU Full Scholarship',
   },
   {
     year: '2021 to present',

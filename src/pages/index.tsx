@@ -1,3 +1,4 @@
+import Experience from '../components/Experience';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Overview from '../components/Overview';
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <main className="lg:mx-40 sm:mx-16">
           <Overview />
+          <Experience />
         </main>
       </div>
     </>

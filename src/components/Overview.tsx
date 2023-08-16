@@ -28,9 +28,8 @@ const Overview = () => {
         <h1 className="font-bold text-accent">01.</h1>
         <h1 className="font-thin">Overview</h1>
       </motion.div>
-      <div className="flex flex-row gap-1 w-fit font-mono mb-5 md:text-[48px] text-[36px] " />
 
-      <motion.div variants={fadeIn('right', '', 0.1, 1)} className="text-[18px] font-thin">
+      <motion.div variants={fadeIn('right', '', 0.1, 1)} className="text-[16px] font-thin">
         <div className="mb-5">
           <p>
             Chanon Limpipolpaibul is a 3rd year student from INIAD, Toyo University with a passion
@@ -39,7 +38,7 @@ const Overview = () => {
           </p>
         </div>
 
-        <ul className="ml-2">
+        <ul>
           {bio.map((b) => (
             <li key={b.year}>
               <span className="font-bold">{b.year} </span>

@@ -41,3 +41,22 @@ export const fadeIn = (
     },
   };
 };
+
+export const logoVariant = () => {
+  return {
+    hidden: {
+      x: -50,
+      opacity: 0,
+      scale: 0.5,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: 'spring',
+        duration: 0.5,
+      },
+    },
+  };
+};

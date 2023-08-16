@@ -9,10 +9,6 @@ const navLinks: NavLink[] = [
     title: 'Overview',
   },
   {
-    id: 'experiences',
-    title: 'Experiences',
-  },
-  {
     id: 'skills',
     title: 'Skills',
   },
@@ -61,7 +57,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-primary' : 'text-text'
+                active === nav.title ? 'text-main' : 'text-text'
               } hover:text-accent font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
@@ -85,7 +81,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`hover:text-accent font-medium cursor-pointer ${
-                    active === nav.title ? 'text-primary' : 'text-text'
+                    active === nav.title ? 'text-main' : 'text-text'
                   }`}
                   onClick={() => {
                     setMenuToggle(!menuToggle);

@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 import { fadeIn, logoVariant, textVariant } from '../utils/motion';
 import SkillIcon from './SkillIcon';
 import SectionWrapper from './SectionWrapper';
+import type { Skill } from '../types';
 
-const programmingSkills = [
+const programmingSkills: Skill[] = [
   {
     name: 'Python',
     icon: 'skills_icon/Python-Dark.svg',
@@ -30,7 +31,7 @@ const programmingSkills = [
   },
 ];
 
-const frontendSkills = [
+const frontendSkills: Skill[] = [
   {
     name: 'Next.js',
     icon: 'skills_icon/NextJS-Dark.svg',
@@ -53,7 +54,7 @@ const frontendSkills = [
   },
 ];
 
-const backendSkills = [
+const backendSkills: Skill[] = [
   {
     name: 'FastAPI',
     icon: 'skills_icon/FastAPI.svg',
@@ -72,7 +73,7 @@ const backendSkills = [
   },
 ];
 
-const databaseSkills = [
+const databaseSkills: Skill[] = [
   {
     name: 'PostgreSQL',
     icon: 'skills_icon/PostgreSQL-Dark.svg',
@@ -87,7 +88,7 @@ const databaseSkills = [
   },
 ];
 
-const otherSkills = [
+const otherSkills: Skill[] = [
   {
     name: 'NodeJS',
     icon: 'skills_icon/NodeJS-Dark.svg',
@@ -118,7 +119,7 @@ const otherSkills = [
   },
 ];
 
-const Skill = () => {
+const Skills = () => {
   const skillList = [
     {
       name: 'Programming Languages',
@@ -173,4 +174,4 @@ const Skill = () => {
   );
 };
 
-export default SectionWrapper(Skill, 'skills');
+export default SectionWrapper(Skills, 'skills');

@@ -7,3 +7,11 @@ export type Bio = {
   year: string;
   event: string;
 };
+
+export type Experience = {
+  company: string;
+  position: string;
+  date: string;
+  description: string[];
+  imageSrc: string;
+};

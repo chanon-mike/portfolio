@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#8C89CC',
+        main: '#8C89CC',
         light: '#A38ECF',
         dark: '#8673AA',
         accent: '#854FDB',
         background: '#292728',
         foreground: '#101010',
+        secondary: '#E5E3E0',
         text: '#FFFFFF',
       },
       keyframes: {

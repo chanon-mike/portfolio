@@ -9,6 +9,10 @@ const nextConfig = {
   trailingSlash: true,
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
+  images: {
+    loader: 'imgix',
+    path: '',
+  },
 };
 
 module.exports = nextConfig;

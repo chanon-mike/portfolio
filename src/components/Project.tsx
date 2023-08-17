@@ -40,7 +40,7 @@ export const projectList: Project[] = [
 
 const ProjectCard = (project: Project) => {
   return (
-    <Link href={project.link}>
+    <Link href={project.link} key={project.name}>
       <motion.div
         variants={logoVariant()}
         className="flex flex-col max-w-sm rounded-xl overflow-hidden shadow-2xl bg-foreground cursor-pointer flex-grow"

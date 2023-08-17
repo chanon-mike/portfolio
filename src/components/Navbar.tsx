@@ -51,7 +51,7 @@ const Navbar = () => {
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li key={nav.id} className="hover:text-accent font-medium cursor-pointer">
-              <Link href={`#${nav.id}`}>{nav.title}</Link>
+              <Link href={`/#${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
         </ul>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   className="hover:text-accent font-medium cursor-pointer text-text"
                   onClick={() => setMenuToggle(!menuToggle)}
                 >
-                  <Link href={`#${nav.id}`}>{nav.title}</Link>
+                  <Link href={`/#${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
             </ul>

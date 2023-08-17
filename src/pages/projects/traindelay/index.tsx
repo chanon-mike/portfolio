@@ -1,3 +1,4 @@
+import { projectList } from '../../../components/Project';
 import {
   ProjectBadgeList,
   ProjectDescription,
@@ -11,13 +12,18 @@ import type { ProjectLink } from '../../../types';
 const projectLink: ProjectLink[] = [
   {
     title: 'Award',
-    name: '4th Open Data Challenge for Public Transportation in Tokyo',
+    name: 'Special Prize - 4th Open Data Challenge for Public Transportation in Tokyo',
     link: 'https://tokyochallenge.odpt.org/2021/award/06.html#iniad3',
   },
   {
     title: 'Source',
     name: 'GitHub',
     link: 'https://github.com/chanon-mike/train-delay-team14',
+  },
+  {
+    title: 'Demo',
+    name: 'YouTube',
+    link: 'https://youtu.be/BbSIhEUqbEE',
   },
   {
     title: 'Presentation',
@@ -31,23 +37,25 @@ const projectLink: ProjectLink[] = [
   },
 ];
 
-const techStack = ['Django', 'Bootstrap', 'MongoDB'];
+const project = projectList.filter((project) => project.name === 'Tokyo Train Delay')[0];
 
 const Page = () => {
   return (
     <>
-      <ProjectImage src="/projects/tokyo-train-delay.png" alt="Tokyo Train Delay" />
+      <ProjectImage src={project.image} alt={project.name} />
 
-      <ProjectTitle>Tokyo Train Delay</ProjectTitle>
+      <ProjectTitle>{project.name}</ProjectTitle>
 
-      <ProjectBadgeList stack={techStack} />
+      <ProjectBadgeList tech={project.tech} />
 
       <ProjectDescription>
-        Web Application, Twitter bot and LINE bot providing train delay information in Tokyo.
-        Utilized Tokyo-transportation open data APIs to provide real-time train delay updates for
-        the Tokyo area. Ensured language support for Japanese and English, resulting in over 330
-        followers over all Twitter bot accounts and receiving a special award in the 4th Open Data
-        Challenge for Public Transportation in Tokyo.
+        <p className="indent-4">
+          Web Application, Twitter bot and LINE bot providing train delay information in Tokyo.
+          Utilized Tokyo-transportation open data APIs to provide real-time train delay updates for
+          the Tokyo area. Ensured language support for Japanese and English, resulting in over 330
+          followers over all Twitter bot accounts and receiving a special award in the 4th Open Data
+          Challenge for Public Transportation in Tokyo.
+        </p>
       </ProjectDescription>
 
       <ProjectExternalLink projectList={projectLink} />

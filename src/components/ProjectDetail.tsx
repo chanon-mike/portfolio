@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { AiOutlineRight } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import type { ProjectLink } from '../types';
 
@@ -11,11 +10,11 @@ type ProjectDetailProps = {
 export const ProjectTitle = ({ children }: ProjectDetailProps) => {
   return (
     <div className="flex flex-row justify-start items-center gap-2 mt-5 font-mono">
-      <span className="flex flex-row gap-2 lg:text-lg text-base">
-        <Link href="/#projects" className="text-main">
+      <span className="flex flex-row gap-2 lg:text-lg text-base font-bold">
+        <Link href="/#projects" className="text-accent">
           Projects
         </Link>
-        <AiOutlineRight className="mt-1.5" />
+        <p>{'>'}</p>
       </span>
       <h1 className="font-bold lg:text-xl text-lg">{children}</h1>
     </div>
@@ -23,19 +22,15 @@ export const ProjectTitle = ({ children }: ProjectDetailProps) => {
 };
 
 export const ProjectDescription = ({ children }: ProjectDetailProps) => {
-  return (
-    <div className="flex flex-col gap-1 mt-6 font-thin lg:text-base text-sm">
-      <p>{children}</p>
-    </div>
-  );
+  return <div className="flex flex-col gap-1 mt-6 font-thin lg:text-base text-sm">{children}</div>;
 };
 
-export const ProjectBadgeList = ({ stack }: { stack: string[] }) => {
+export const ProjectBadgeList = ({ tech }: { tech: string[] }) => {
   return (
     <div className="flex flex-row gap-2 mt-2 font-mono lg:text-sm text-xs">
-      {stack.map((tech) => (
-        <span key={tech} className="px-1 bg-main rounded">
-          {tech}
+      {tech.map((stack) => (
+        <span key={stack} className="px-1 bg-main rounded">
+          {stack}
         </span>
       ))}
     </div>

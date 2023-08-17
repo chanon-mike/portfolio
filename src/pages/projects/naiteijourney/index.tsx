@@ -9,6 +9,8 @@ import {
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
 import type { ProjectLink } from '../../../types';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../../utils/motion';
 
 const projectLink: ProjectLink[] = [
   {
@@ -37,7 +39,7 @@ const project = projectList.filter((project) => project.name === 'Naitei Journey
 
 const Page = () => {
   return (
-    <>
+    <motion.div variants={fadeIn('down', '', 0, 0.25)}>
       <ProjectImage src={project.image} alt={project.name} />
 
       <ProjectTitle>{project.name}</ProjectTitle>
@@ -76,7 +78,7 @@ const Page = () => {
       <div className="flex flex-col gap-2">
         <ProjectImage src="/projects/naitei-journey2.png" alt="Naitei Journey2" />
       </div>
-    </>
+    </motion.div>
   );
 };
 

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { projectList } from '../../../components/Project';
 import {
   ProjectBadgeList,
@@ -8,6 +9,7 @@ import {
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
 import type { ProjectLink } from '../../../types';
+import { fadeIn } from '../../../utils/motion';
 
 const projectLink: ProjectLink[] = [
   {
@@ -41,7 +43,7 @@ const project = projectList.filter((project) => project.name === 'Tokyo Train De
 
 const Page = () => {
   return (
-    <>
+    <motion.div variants={fadeIn('down', '', 0, 0.25)}>
       <ProjectImage src={project.image} alt={project.name} />
 
       <ProjectTitle>{project.name}</ProjectTitle>
@@ -64,7 +66,7 @@ const Page = () => {
         <ProjectImage src="/projects/tokyo-train-delay2.png" alt="Tokyo Train Delay2" />
         <ProjectImage src="/projects/tokyo-train-delay3.png" alt="Tokyo Train Delay3" />
       </div>
-    </>
+    </motion.div>
   );
 };
 

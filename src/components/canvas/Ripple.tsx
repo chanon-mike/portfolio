@@ -9,12 +9,12 @@ const Ripple = () => {
   const imgTexture = useLoader(TextureLoader, 'circle.png');
 
   // sin((x^2 + y^2 + 3) * 2) * 0.2 for ripple effect
-  let t = 0;
+  const t = useRef(0);
   const f = 0.001;
   const a = -25;
   const graph = useCallback(
     (x: number, z: number) => {
-      return Math.sin(f * (x ** 2 + z ** 2 + t)) * a;
+      return Math.sin(f * (x ** 2 + z ** 2 + t.current)) * a;
     },
     [t, f, a],
   );
@@ -36,7 +36,7 @@ const Ripple = () => {
   }, [count, sep, graph]);
 
   useFrame(() => {
-    t += 30;
+    t.current += 30;
 
     if (!bufferRef.current) return;
 

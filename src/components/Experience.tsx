@@ -1,6 +1,6 @@
 import { Experience } from '../types';
 import { fadeIn, logoVariant } from '../utils/motion';
-import SectionWrapper from './SectionWrapper';
+import SectionWrapper from './wrapper/SectionWrapper';
 import { motion } from 'framer-motion';
 
 const experienceList: Experience[] = [

@@ -19,7 +19,6 @@ const navLinks: NavLink[] = [
 ];
 
 const Navbar = () => {
-  const [active, setActive] = useState('');
   const [menuToggle, setMenuToggle] = useState(false);
   const [isHover, setIsHover] = useState(false);
 
@@ -29,10 +28,7 @@ const Navbar = () => {
         <Link
           href="/"
           className="w-max flex items-center gap-2"
-          onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
-          }}
+          onClick={() => window.scrollTo(0, 0)}
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
         >
@@ -54,13 +50,7 @@ const Navbar = () => {
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? 'text-main' : 'text-text'
-              } hover:text-accent font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
+            <li key={nav.id} className="hover:text-accent font-medium cursor-pointer">
               <Link href={`#${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
@@ -80,13 +70,8 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`hover:text-accent font-medium cursor-pointer ${
-                    active === nav.title ? 'text-main' : 'text-text'
-                  }`}
-                  onClick={() => {
-                    setMenuToggle(!menuToggle);
-                    setActive(nav.title);
-                  }}
+                  className="hover:text-accent font-medium cursor-pointer text-text"
+                  onClick={() => setMenuToggle(!menuToggle)}
                 >
                   <Link href={`#${nav.id}`}>{nav.title}</Link>
                 </li>

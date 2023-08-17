@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import SectionWrapper from './SectionWrapper';
+import SectionWrapper from './wrapper/SectionWrapper';
 import { logoVariant, textVariant } from '../utils/motion';
 import { Project } from '../types';
 
@@ -10,7 +10,7 @@ const projectList: Project[] = [
       'Web Application, Twitter bot and LINE bot providing train delay information in Tokyo. Internationalization and responsive is supported.',
     tech: ['Django', 'Bootstrap', 'MongoDB'],
     image: 'projects/tokyo-train-delay.png',
-    link: 'projects/tokyo-train-delay',
+    link: 'projects/traindelay',
   },
   {
     name: 'AI-House Automation',
@@ -25,7 +25,7 @@ const projectList: Project[] = [
       'Github Actions',
     ],
     image: 'projects/aihouse-automation.png',
-    link: 'projects/aihouse-automation',
+    link: 'projects/aihouse',
   },
   {
     name: 'Naitei Journey',

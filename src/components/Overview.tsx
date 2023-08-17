@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import type { Bio } from '../types';
 import { fadeIn, textVariant } from '../utils/motion';
-import SectionWrapper from './SectionWrapper';
+import SectionWrapper from './wrapper/SectionWrapper';
 
 const bio: Bio[] = [
   {

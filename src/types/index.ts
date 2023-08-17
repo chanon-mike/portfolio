@@ -28,3 +28,9 @@ export type Project = {
   image: string;
   link: string;
 };
+
+export type ProjectLink = {
+  title: string;
+  name: string;
+  link: string;
+};

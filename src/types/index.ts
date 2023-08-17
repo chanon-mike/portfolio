@@ -20,3 +20,11 @@ export type Skill = {
   name: string;
   icon: string;
 };
+
+export type Project = {
+  name: string;
+  description: string;
+  tech: string[];
+  image: string;
+  link: string;
+};

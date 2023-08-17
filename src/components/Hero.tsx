@@ -3,8 +3,8 @@ import RippleCanvas from './canvas/Ripple';
 const Hero = () => {
   return (
     <section id="hero" className="relative w-full h-screen mx-auto">
-      <div className="absolute inset-0 top-[120px] max-w-[1920px] mx-auto px-10 flex items-start gap-4 min-[1280px]:flex-row min-[320px]:flex-col">
-        <div className="w-full max-w-lg lg:ml-20">
+      <div className="absolute inset-0 top-[120px] max-w-[1920px] mx-auto flex items-start gap-4 min-[1280px]:flex-row min-[320px]:flex-col">
+        <div className="w-full max-w-lg lg:ml-20 px-10 lg:pr-0 lg:pl-10">
           <h1 className="text-text font-mono font-bold lg:text-[55px] sm:text-[45px] text-[35px] mt-2 sm:whitespace-nowrap">
             Hi I&apos;m <span className="text-accent">chanon_mike</span>
           </h1>
@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <span className="w-full h-5/6 -z-10">
+        <span className="w-full h-5/6 -z-10 overflow-hidden">
           <RippleCanvas />
         </span>
       </div>

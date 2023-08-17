@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, logoVariant, textVariant } from '../utils/motion';
 import SkillIcon from './SkillIcon';
 import SectionWrapper from './SectionWrapper';
-import type { Skill } from '../types';
+import { Skill } from '../types';
 
 const programmingSkills: Skill[] = [
   {
@@ -119,7 +119,7 @@ const otherSkills: Skill[] = [
   },
 ];
 
-const Skills = () => {
+const Skill = () => {
   const skillList = [
     {
       name: 'Programming Languages',
@@ -144,14 +144,16 @@ const Skills = () => {
   ];
 
   return (
-    <div className="relative w-full h-screen mx-auto">
-      <motion.div
-        variants={textVariant()}
-        className="flex items-center justify-center gap-1 font-mono mb-5 md:text-[48px] text-[36px] text-text"
-      >
-        <h1 className="font-bold text-accent">02.</h1>
-        <h1 className="font-thin">Skills</h1>
+    <>
+      <motion.div variants={textVariant()} className="font-mono text-text">
+        <div className="flex items-center justify-center gap-1 md:text-[48px] text-[36px]">
+          <h1 className="font-bold text-accent">02.</h1>
+          <h1 className="font-thin">Skills</h1>
+        </div>
+        <h3 className="flex justify-center mb-10 font-thin text-xs">As of Aug. 2023</h3>
       </motion.div>
+
+      <motion.h3 variants={textVariant()} />
 
       {skillList.map((skill) => (
         <div key={skill.name} className="my-5">
@@ -161,7 +163,7 @@ const Skills = () => {
           >
             {skill.name}
           </motion.h2>
-          <div className="flex flex-row gap-1 justify-center">
+          <div className="flex flex-row flex-wrap gap-1 justify-center">
             {skill.skills.map((skill) => (
               <motion.div key={skill.name} variants={logoVariant()}>
                 <SkillIcon name={skill.name} src={skill.icon} />
@@ -170,8 +172,8 @@ const Skills = () => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
-export default SectionWrapper(Skills, 'skills');
+export default SectionWrapper(Skill, 'skills');

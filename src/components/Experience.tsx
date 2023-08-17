@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const experienceList: Experience[] = [
   {
-    company: 'CA Tech Kids',
+    company: 'CA Tech Kids, Inc.',
     position: 'Programming Mentor',
     date: 'Jul 2022 ~ Present',
     description: [
@@ -15,7 +15,7 @@ const experienceList: Experience[] = [
     imageSrc: 'company_icon/techkid_icon.webp',
   },
   {
-    company: 'Diamond head',
+    company: 'Diamond head Co.,Ltd.',
     position: 'Backend Developer Intern',
     date: 'Aug 2022 ~ Sep 2022',
     description: [
@@ -30,7 +30,7 @@ const Experience = () => {
   return (
     <motion.ol
       variants={fadeIn('', '', 0, 0.3)}
-      className="relative border-l border-text ml-20 mr-10"
+      className="relative border-l border-text ml-20 mr-6 sm:mr-10"
     >
       {experienceList.map((experience, i) => (
         <li className="mb-10 ml-6" key={experience.company}>
@@ -47,7 +47,7 @@ const Experience = () => {
             <h3 className="flex items-center mb-1 text-lg font-semibold text-text">
               {experience.company}
               {i === 0 && (
-                <span className="bg-main md:text-sm text-xs text-text mx-3 px-2 py-0.5 rounded mb-1">
+                <span className="bg-main md:text-sm text-xs text-text mx-3 px-2 py-0.5 rounded mb-1 overflow-auto">
                   Latest
                 </span>
               )}

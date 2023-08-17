@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const experienceList: Experience[] = [
   {
-    company: 'CA Tech Kids, Inc.',
+    company: 'CA Tech Kids',
     position: 'Programming Mentor',
     date: 'Jul 2022 ~ Present',
     description: [
@@ -15,7 +15,7 @@ const experienceList: Experience[] = [
     imageSrc: 'company_icon/techkid_icon.webp',
   },
   {
-    company: 'Diamond head Co.,Ltd.',
+    company: 'Diamond head',
     position: 'Backend Developer Intern',
     date: 'Aug 2022 ~ Sep 2022',
     description: [
@@ -44,20 +44,20 @@ const Experience = () => {
           />
 
           <motion.div variants={fadeIn('up', '', 0, 0.5)} className="ml-4">
-            <h3 className="flex items-center mb-1 text-[18px] font-semibold text-text">
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-text">
               {experience.company}
               {i === 0 && (
-                <span className="bg-main text-text text-sm mx-3 px-2.5 py-0.5 rounded mb-1">
+                <span className="bg-main md:text-sm text-xs text-text mx-3 px-2 py-0.5 rounded mb-1">
                   Latest
                 </span>
               )}
             </h3>
-            <span className="flex flex-row items-start gap-2 leading-none mb-3 text-sm font-normal text-secondary">
+            <span className="flex flex-row items-start gap-2 leading-none mb-3 text-xs md:text-sm font-normal text-secondary">
               <h4>{experience.position}</h4>
               <p>|</p>
               <time>{experience.date}</time>
             </span>
-            <ul className="mb-4 ml-4 text-base font-thin text-[16px] text-text list-disc marker:text-light">
+            <ul className="mb-4 ml-4 sm:text-base text-sm font-thin text-text list-disc marker:text-light">
               {experience.description.map((d) => (
                 <li key={d}>{d}</li>
               ))}

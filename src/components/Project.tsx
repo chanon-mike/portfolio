@@ -53,8 +53,8 @@ const ProjectCard = (project: Project) => {
     >
       <img className="aspect-auto w-full" src={project.image} alt={project.name} />
       <div className="px-6 py-4 flex flex-grow flex-col">
-        <h2 className="font-bold mb-2 text-text lg:text-lg text-sm">{project.name}</h2>
-        <p className="flex-grow text-secondary lg:text-sm text-xs">{project.description}</p>
+        <h2 className="font-bold mb-2 text-text lg:text-lg text-md">{project.name}</h2>
+        <p className="flex-grow text-secondary lg:text-sm text-sm">{project.description}</p>
       </div>
       <div className="px-6 pb-2">
         {project.tech.map((tech) => (

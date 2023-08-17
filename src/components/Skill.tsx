@@ -163,7 +163,7 @@ const Skill = () => {
           >
             {skill.name}
           </motion.h2>
-          <div className="flex flex-row gap-1 justify-center">
+          <div className="flex flex-row flex-wrap gap-1 justify-center">
             {skill.skills.map((skill) => (
               <motion.div key={skill.name} variants={logoVariant()}>
                 <SkillIcon name={skill.name} src={skill.icon} />

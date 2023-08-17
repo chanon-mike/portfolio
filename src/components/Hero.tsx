@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <span className="w-full h-5/6 -z-10">
+        <span className="w-full h-5/6 -z-10 overflow-hidden">
           <RippleCanvas />
         </span>
       </div>

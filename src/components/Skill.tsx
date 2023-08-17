@@ -144,7 +144,7 @@ const Skill = () => {
   ];
 
   return (
-    <div className="relative w-full h-screen mx-auto">
+    <>
       <motion.div variants={textVariant()} className="font-mono text-text">
         <div className="flex items-center justify-center gap-1 md:text-[48px] text-[36px]">
           <h1 className="font-bold text-accent">02.</h1>
@@ -172,7 +172,7 @@ const Skill = () => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

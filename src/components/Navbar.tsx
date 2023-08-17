@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
     title: 'Skills',
   },
   {
-    id: 'project',
+    id: 'projects',
     title: 'Projects',
   },
 ];

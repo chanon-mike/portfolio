@@ -13,9 +13,9 @@ const config: Config = {
         light: '#A38ECF',
         dark: '#8673AA',
         accent: '#854FDB',
-        background: '#292728',
-        foreground: '#101010',
-        secondary: '#E5E3E0',
+        background: '#11101E',
+        foreground: '#1D1C2A',
+        secondary: '#DCDAEB',
         text: '#FFFFFF',
       },
       keyframes: {

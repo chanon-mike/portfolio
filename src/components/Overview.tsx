@@ -2,23 +2,25 @@ import { motion } from 'framer-motion';
 import type { Bio } from '../types';
 import { fadeIn, textVariant } from '../utils/motion';
 import SectionWrapper from './wrapper/SectionWrapper';
-
-const bio: Bio[] = [
-  {
-    year: '2002',
-    event: 'Born in Chiang Mai, Thailand',
-  },
-  {
-    year: '2019',
-    event: 'Exchange in Saitama via YFU Full Scholarship',
-  },
-  {
-    year: '2021 to present',
-    event: 'INIAD, Toyo University Full Scholarship',
-  },
-];
+// import { useTranslation } from 'next-i18next';
 
 const Overview = () => {
+  // const { t } = useTranslation('overview');
+  const bio: Bio[] = [
+    {
+      year: '2002',
+      event: 'Born in Chiang Mai, Thailand',
+    },
+    {
+      year: '2019',
+      event: 'Exchange in Saitama via YFU Full Scholarship',
+    },
+    {
+      year: '2021 to present',
+      event: 'INIAD, Toyo University Full Scholarship',
+    },
+  ];
+
   return (
     <div className="flex justify-start flex-col px-10 mt-12 text-text">
       <motion.div

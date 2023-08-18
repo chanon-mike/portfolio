@@ -6,7 +6,7 @@ import CanvasLoader from './CanvasLoader';
 
 const Ripple = () => {
   const bufferRef = useRef<THREE.BufferAttribute | null>(null);
-  const imgTexture = useLoader(TextureLoader, 'circle.png');
+  const imgTexture = useLoader(TextureLoader, '/circle.png');
 
   // sin((x^2 + y^2 + 3) * 2) * 0.2 for ripple effect
   const t = useRef(0);

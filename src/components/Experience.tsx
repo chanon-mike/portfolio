@@ -12,7 +12,7 @@ const experienceList: Experience[] = [
       'Teaching QUREO, Scratch, and Unity to elementary and middle school students.',
       'Translating QUREO programming materials from Japanese to English',
     ],
-    imageSrc: 'company_icon/techkid_icon.webp',
+    imageSrc: '/company_icon/techkid_icon.webp',
   },
   {
     company: 'Diamond head Co.,Ltd.',
@@ -22,7 +22,7 @@ const experienceList: Experience[] = [
       'Developed new features using Domain Driven Design and Django as part of the Point Management System team for an ecommerce website.',
       'Completed 1/3 of the assigned tasks from the Work Breakdown Structure (WBS) which was ahead of schedule, delivering it 1 week earlier than planned.',
     ],
-    imageSrc: 'company_icon/diamondhead_icon.webp',
+    imageSrc: '/company_icon/diamondhead_icon.webp',
   },
 ];
 

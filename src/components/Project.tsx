@@ -53,7 +53,7 @@ const Project = () => {
           <h1 className="font-thin">Projects</h1>
         </div>
         <h3 className="flex justify-center mb-10 mx-4 font-thin text-xs text-center">
-          Each one is a unique piece of project that I have worked on.
+          {t('secondaryText')}
         </h3>
       </motion.div>
 

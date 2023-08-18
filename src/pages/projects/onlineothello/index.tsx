@@ -37,9 +37,14 @@ const Page = () => {
 
       <ProjectDescription>
         <p className="indent-4">
-          Online Othello game with lobby features. Players can create a room and invite their
-          friends to play together. This application was a new challenge for me in term of
-          technology. Most of the tech stack here is my first time, such as Fastify, Frourio,
+          Online Othello game with lobby features. Player can create a room and invite other player
+          to join. Player can also join a room that is already created and spectate the game.
+        </p>
+        <h2 className="text-lg mt-2 mb-1 font-normal border-b-main border-b-2 w-fit">Challenges</h2>
+        <p className="indent-4">
+          This application was created in the INIAD Developer Circle. The goal of this project is to
+          create a real-time online application. This application was a new challenge for me in term
+          of technology. Most of the tech stack here is my first time, such as Fastify, Frourio,
           Firebase, Prisma, etc. It is also my first time created real-time application and online
           features.
         </p>

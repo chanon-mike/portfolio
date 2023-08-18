@@ -3,6 +3,8 @@ import Hero from '../components/Hero';
 import Overview from '../components/Overview';
 import Project from '../components/Project';
 import Skill from '../components/Skill';
+import type { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Home() {
   return (
@@ -17,3 +19,15 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', [
+      'common',
+      'overview',
+      'experience',
+      'skill',
+      'project',
+    ])),
+  },
+});

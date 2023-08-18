@@ -1,0 +1,19 @@
+{
+  "challenges": "Challenges",
+  "description": {
+    "1": "Online Othello game with lobby features. Player can create a room and invite other player to join. Player can also join a room that is already created and spectate the game.",
+    "2": "This application was created in the INIAD Developer Circle. The goal of this project is to create a real-time online application. This application was a new challenge for me in term of technology. Most of the tech stack here is my first time, such as Fastify, Frourio, Firebase, Prisma, etc. It is also my first time created real-time application and online features."
+  },
+  "projectLink": [
+    {
+      "title": "Website",
+      "name": "Online Othello",
+      "link": "https://online-othello-frontend.onrender.com/"
+    },
+    {
+      "title": "Source",
+      "name": "GitHub",
+      "link": "https://github.com/chanon-mike/online-othello"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-import type { ProjectLink } from '../types';
+import type { ProjectLink } from '../@types';
 
 type ProjectDetailProps = {
   children: ReactNode;
@@ -37,10 +37,10 @@ export const ProjectBadgeList = ({ tech }: { tech: string[] }) => {
   );
 };
 
-export const ProjectExternalLink = ({ projectList }: { projectList: ProjectLink[] }) => {
+export const ProjectExternalLink = ({ projectLink }: { projectLink: ProjectLink[] }) => {
   return (
     <ul className="flex flex-col gap-1 my-6 font-thin lg:text-base text-sm">
-      {projectList.map((project) => (
+      {projectLink.map((project) => (
         <li key={project.name} className="flex flex-row items-center mb-2">
           <span className="px-1 bg-main rounded">{project.title}</span>
           <Link href={project.link} className="pl-2 text-accent">

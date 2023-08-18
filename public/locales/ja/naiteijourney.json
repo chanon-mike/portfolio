@@ -1,0 +1,36 @@
+{
+  "challenges": "課題",
+  "description": {
+    "1": "就職活動の学生を対象にしたサービスで、企業の選考状況を一目で把握できるように就職管理Webアプリになります。カンバンボードの形で企業の選考状況の作成、編集、削除、カードのドラグアンドドロップすることができます。",
+    "2": {
+      "1": "このプロジェクトは2人チームによって開発されます。担当した部分はサイトデザイン、バックエンドサーバー、デプロイ、アイデアなどです。このアプリは",
+      "2": "技育マンスリーハッカソンvol.7",
+      "3": "のため開発され、",
+      "4": "技育展2023",
+      "5": "に登壇しました。"
+    },
+    "3": "就職活動をする学生は、たくさん企業のエントリーをして、選考状況があやふやになってしまったり、ESの締切が過ぎてしまったりという企業の選考状況を把握するのが難しいという問題があります。それを可決するために、簡単に選考状況を管理できるサービスを開発しました。UIが見やすくしたり、ドラグアンドドロップ機能で適切な場所に置けたり、情報の締切の表示など工夫しました。"
+  },
+  "projectLink": [
+    {
+      "title": "Website",
+      "name": "内定Journey",
+      "link": "https://naitei-journey.vercel.app/"
+    },
+    {
+      "title": "Source",
+      "name": "GitHub",
+      "link": "https://github.com/chanon-mike/naitei-journey"
+    },
+    {
+      "title": "Demo",
+      "name": "YouTube",
+      "link": "https://www.youtube.com/watch?v=cjXLNUXjS8U"
+    },
+    {
+      "title": "Presentation",
+      "name": "予選 - 技育展2023",
+      "link": "https://drive.google.com/file/d/1zswW8g6aLywxphShpBWBJPh7SLemN3t-/view?usp=sharing"
+    }
+  ]
+}

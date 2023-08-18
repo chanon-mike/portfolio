@@ -1,44 +1,20 @@
 import { motion } from 'framer-motion';
 import SectionWrapper from './wrapper/SectionWrapper';
 import { logoVariant, textVariant } from '../utils/motion';
-import { Project } from '../types';
+
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
-export const projectList: Project[] = [
-  {
-    name: 'Tokyo Train Delay',
-    description:
-      'Web Application, Twitter bot and LINE bot providing train delay information in Tokyo. Internationalization and responsive is supported.',
-    tech: ['Django', 'Bootstrap', 'MongoDB'],
-    image: '/projects/tokyo-train-delay.png',
-    link: '/projects/traindelay',
-  },
-  {
-    name: 'AI-House Automation',
-    description: 'Automating dinner reservation process for AI-House HUB-4 student dormitory. ',
-    tech: ['React', 'TypeScript', 'FastAPI', 'DynamoDB', 'AWS Lambda', 'Docker', 'Github Actions'],
-    image: '/projects/aihouse-automation.png',
-    link: '/projects/aihouse',
-  },
-  {
-    name: 'Naitei Journey',
-    description:
-      'Job hunting management application that allows students to grasp job hunting status at a glance. User can add, edit, delete, and easily managing job application status in the form of a Kanban board-like style.',
-    tech: ['Next.js', 'TypeScript', 'FastAPI', 'Docker'],
-    image: '/projects/naitei-journey.png',
-    link: '/projects/naiteijourney',
-  },
-  {
-    name: 'Online Othello',
-    description:
-      'Online Othello game with lobby features. Players can create a room and invite their friends to play together.',
-    tech: ['Next.js', 'TypeScript', 'Frourio', 'Fastify', 'Firebase', 'Prisma', 'Docker'],
-    image: '/projects/online-othello.png',
-    link: '/projects/onlineothello',
-  },
-];
+type ProjectCardProps = {
+  id: string;
+  name: string;
+  description: string;
+  tech: string[];
+  image: string;
+  link: string;
+};
 
-const ProjectCard = (project: Project) => {
+const ProjectCard = (project: ProjectCardProps) => {
   return (
     <Link href={project.link} key={project.name}>
       <motion.div
@@ -66,6 +42,9 @@ const ProjectCard = (project: Project) => {
 };
 
 const Project = () => {
+  const { t } = useTranslation('project');
+  const projectList = t('projectList', { returnObjects: true });
+
   return (
     <>
       <motion.div variants={textVariant()} className="font-mono text-text">
@@ -74,7 +53,7 @@ const Project = () => {
           <h1 className="font-thin">Projects</h1>
         </div>
         <h3 className="flex justify-center mb-10 mx-4 font-thin text-xs text-center">
-          Each one is a unique piece of project that I have worked on.
+          {t('secondaryText')}
         </h3>
       </motion.div>
 

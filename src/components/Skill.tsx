@@ -2,143 +2,145 @@ import { motion } from 'framer-motion';
 import { fadeIn, logoVariant, textVariant } from '../utils/motion';
 import SkillIcon from './SkillIcon';
 import SectionWrapper from './wrapper/SectionWrapper';
-import { Skill } from '../types';
+import { Skill } from '../@types';
+import { useTranslation } from 'next-i18next';
 
 const programmingSkills: Skill[] = [
   {
     name: 'Python',
-    icon: 'skills_icon/Python-Dark.svg',
+    icon: '/skills_icon/Python-Dark.svg',
   },
   {
     name: 'JavaScript',
-    icon: 'skills_icon/JavaScript.svg',
+    icon: '/skills_icon/JavaScript.svg',
   },
   {
     name: 'TypeScript',
-    icon: 'skills_icon/TypeScript.svg',
+    icon: '/skills_icon/TypeScript.svg',
   },
   {
     name: 'C',
-    icon: 'skills_icon/C.svg',
+    icon: '/skills_icon/C.svg',
   },
   {
     name: 'OCaml',
-    icon: 'skills_icon/OCaml.svg',
+    icon: '/skills_icon/OCaml.svg',
   },
   {
     name: 'Java',
-    icon: 'skills_icon/Java-Dark.svg',
+    icon: '/skills_icon/Java-Dark.svg',
   },
 ];
 
 const frontendSkills: Skill[] = [
   {
     name: 'Next.js',
-    icon: 'skills_icon/NextJS-Dark.svg',
+    icon: '/skills_icon/NextJS-Dark.svg',
   },
   {
     name: 'React',
-    icon: 'skills_icon/React-Dark.svg',
+    icon: '/skills_icon/React-Dark.svg',
   },
   {
     name: 'HTML',
-    icon: 'skills_icon/HTML.svg',
+    icon: '/skills_icon/HTML.svg',
   },
   {
     name: 'CSS',
-    icon: 'skills_icon/CSS.svg',
+    icon: '/skills_icon/CSS.svg',
   },
   {
     name: 'TailwindCSS',
-    icon: 'skills_icon/TailwindCSS-Dark.svg',
+    icon: '/skills_icon/TailwindCSS-Dark.svg',
   },
 ];
 
 const backendSkills: Skill[] = [
   {
     name: 'FastAPI',
-    icon: 'skills_icon/FastAPI.svg',
+    icon: '/skills_icon/FastAPI.svg',
   },
   {
     name: 'Django',
-    icon: 'skills_icon/Django.svg',
+    icon: '/skills_icon/Django.svg',
   },
   {
     name: 'Flask',
-    icon: 'skills_icon/Flask-Dark.svg',
+    icon: '/skills_icon/Flask-Dark.svg',
   },
   {
     name: 'Express',
-    icon: 'skills_icon/ExpressJS-DARK.svg',
+    icon: '/skills_icon/ExpressJS-DARK.svg',
   },
 ];
 
 const databaseSkills: Skill[] = [
   {
     name: 'PostgreSQL',
-    icon: 'skills_icon/PostgreSQL-Dark.svg',
+    icon: '/skills_icon/PostgreSQL-Dark.svg',
   },
   {
     name: 'MongoDB',
-    icon: 'skills_icon/MongoDB.svg',
+    icon: '/skills_icon/MongoDB.svg',
   },
   {
     name: 'DynamoDB',
-    icon: 'skills_icon/DynamoDB-Dark.svg',
+    icon: '/skills_icon/DynamoDB-Dark.svg',
   },
 ];
 
 const otherSkills: Skill[] = [
   {
     name: 'NodeJS',
-    icon: 'skills_icon/NodeJS-Dark.svg',
+    icon: '/skills_icon/NodeJS-Dark.svg',
   },
   {
     name: 'Linux',
-    icon: 'skills_icon/Linux-Dark.svg',
+    icon: '/skills_icon/Linux-Dark.svg',
   },
   {
     name: 'Git',
-    icon: 'skills_icon/Git.svg',
+    icon: '/skills_icon/Git.svg',
   },
   {
     name: 'Docker',
-    icon: 'skills_icon/Docker.svg',
+    icon: '/skills_icon/Docker.svg',
   },
   {
     name: 'AWS',
-    icon: 'skills_icon/AWS-Dark.svg',
+    icon: '/skills_icon/AWS-Dark.svg',
   },
   {
     name: 'Heroku',
-    icon: 'skills_icon/Heroku.svg',
+    icon: '/skills_icon/Heroku.svg',
   },
   {
     name: 'GitHub Actions',
-    icon: 'skills_icon/GitHubActions-Dark.svg',
+    icon: '/skills_icon/GitHubActions-Dark.svg',
   },
 ];
 
 const Skill = () => {
+  const { t } = useTranslation('skill');
   const skillList = [
     {
-      name: 'Programming Languages',
+      name: t('programming'),
       skills: programmingSkills,
     },
     {
-      name: 'Frontend Development',
+      name: t('frontend'),
       skills: frontendSkills,
     },
     {
-      name: 'Backend Development',
+      name: t('backend'),
       skills: backendSkills,
     },
     {
-      name: 'Database',
+      name: t('database'),
       skills: databaseSkills,
     },
     {
-      name: 'Other',
+      name: t('others'),
       skills: otherSkills,
     },
   ];
@@ -150,7 +152,7 @@ const Skill = () => {
           <h1 className="font-bold text-accent">02.</h1>
           <h1 className="font-thin">Skills</h1>
         </div>
-        <h3 className="flex justify-center mb-10 font-thin text-xs">As of Aug. 2023</h3>
+        <h3 className="flex justify-center mb-10 font-thin text-xs">{t('skillTime')}</h3>
       </motion.div>
 
       <motion.h3 variants={textVariant()} />

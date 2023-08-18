@@ -54,9 +54,23 @@ const Page = () => {
         <p className="indent-4">
           Web Application, Twitter bot and LINE bot providing train delay information in Tokyo.
           Utilized Tokyo-transportation open data APIs to provide real-time train delay updates for
-          the Tokyo area. Ensured language support for Japanese and English, resulting in over 330
-          followers over all Twitter bot accounts and receiving a special award in the 4th Open Data
-          Challenge for Public Transportation in Tokyo.
+          the Tokyo area. Ensured language support for Japanese and English, resulting in over
+          <span className="text-main font-normal"> 330 </span>
+          followers over all Twitter bot accounts and receiving a
+          <span className="text-main font-normal">
+            {' '}
+            special award in the 4th Open Data Challenge for Public Transportation in Tokyo
+          </span>
+          .
+        </p>
+        <h2 className="text-lg mt-2 mb-1 font-normal border-b-main border-b-2 w-fit">Challenges</h2>
+        <p className="indent-4">
+          In Japan, when train delay happened, the train company will announce the delay on their
+          website and station. However, the announcement is mostly in Japanese, and the information
+          is not centralized. Which means, each train company will announce the delay on their own
+          website. Therefore, this application is created to provide a centralized platform for
+          train delay information. Utilizing web application, and social media platform such as
+          Twitter and LINE, to provide train delay information in English and Japanese.
         </p>
       </ProjectDescription>
 

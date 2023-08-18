@@ -27,7 +27,7 @@ export const ProjectDescription = ({ children }: ProjectDetailProps) => {
 
 export const ProjectBadgeList = ({ tech }: { tech: string[] }) => {
   return (
-    <div className="flex flex-row gap-2 mt-2 font-mono lg:text-sm text-xs">
+    <div className="flex flex-row flex-wrap gap-2 mt-2 font-mono lg:text-sm text-xs">
       {tech.map((stack) => (
         <span key={stack} className="px-1 bg-main rounded">
           {stack}

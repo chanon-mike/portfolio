@@ -71,6 +71,15 @@ const Page = () => {
           </Link>
           .
         </p>
+        <h2 className="text-lg mt-2 mb-1 font-normal border-b-main border-b-2 w-fit">Challenges</h2>
+        <p className="indent-4">
+          When applied for a job, having to manage the status of each application is a very time
+          consuming process. Especially in Japan, where student apply for many job and each has
+          their own schedule. Therefore, we want to create a tool that can help students manage
+          their job hunting status more easily. The application is designed to be simple and easy to
+          use with a Kanban board. User can easily drag and drop the application to the appropriate
+          status. The application also allows user to enter information about the applied position.
+        </p>
       </ProjectDescription>
 
       <ProjectExternalLink projectList={projectLink} />

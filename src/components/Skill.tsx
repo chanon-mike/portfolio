@@ -70,7 +70,7 @@ const backendSkills: Skill[] = [
   },
   {
     name: 'Express',
-    icon: '/skills_icon/ExpressJS-DARK.svg',
+    icon: '/skills_icon/ExpressJS-Dark.svg',
   },
 ];
 
@@ -116,7 +116,7 @@ const otherSkills: Skill[] = [
   },
   {
     name: 'GitHub Actions',
-    icon: '/skills_icon/GitHubActions-Dark.svg',
+    icon: '/skills_icon/GithubActions-Dark.svg',
   },
 ];
 

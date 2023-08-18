@@ -1,0 +1,40 @@
+{
+  "challenges": "Challenges",
+  "description": {
+    "1": {
+      "1": "Web Application, Twitter bot and LINE bot providing train delay information in Tokyo. Utilized Tokyo-transportation open data APIs to provide real-time train delay updates for the Tokyo area. Ensured language support for Japanese and English, resulting in over",
+      "2": " 330 users",
+      "3": " over all Twitter bot accounts and receiving a",
+      "4": " special award in the 4th Open Data Challenge for Public Transportation in Tokyo",
+      "5": "."
+    },
+    "2": "In Japan, when train delay happened, the train company will announce the delay on their website and station. However, the announcement is mostly in Japanese, and the information is not centralized. Which means, it difficult to look at the information for each train line. Therefore, this application is created to provide a centralized platform for train delay information. Utilizing web application, and social media platform such as Twitter and LINE, to provide train delay information in English and Japanese."
+  },
+  "projectLink": [
+    {
+      "title": "Award",
+      "name": "Special Prize - 4th Open Data Challenge for Public Transportation in Tokyo",
+      "link": "https://tokyochallenge.odpt.org/2021/award/06.html#iniad3"
+    },
+    {
+      "title": "Source",
+      "name": "GitHub",
+      "link": "https://github.com/chanon-mike/train-delay-team14"
+    },
+    {
+      "title": "Demo",
+      "name": "YouTube",
+      "link": "https://youtu.be/BbSIhEUqbEE"
+    },
+    {
+      "title": "Presentation",
+      "name": "Lightning Talk - Tokyo Train Delay",
+      "link": "https://drive.google.com/file/d/1rDAJv_f4vfR9QSpTJS_72NsBAEK2xq8K/view"
+    },
+    {
+      "title": "Presentation",
+      "name": "Final Presentation - Tokyo Train Delay",
+      "link": "https://drive.google.com/file/d/1H20a9v7KwEb7Z4fjw_jCsYDN_URRZPMf/view"
+    }
+  ]
+}

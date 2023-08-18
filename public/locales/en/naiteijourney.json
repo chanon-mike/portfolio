@@ -1,0 +1,36 @@
+{
+  "challenges": "Challenges",
+  "description": {
+    "1": "Job hunting management application that allows students to grasp job hunting status at a glance. User can easily managing selection status in the form of a Kanban board. User can enter applied job information such as company name, position, url, current application status, application flow, etc. These data will be saved to the server and can be accessed every time logged in.",
+    "2": {
+      "1": "This project is developed in a team of 2 people. My responsibility is including frontend design, backend server and deployment. This application is developed in Geek Project,",
+      "2": " Monthly Hackathon vol.7 ",
+      "3": "and presented in ",
+      "4": "Geekten 2023",
+      "5": "."
+    },
+    "3": "When applied for a job, having to manage the status of each application is a very time consuming process. Especially in Japan, where student apply for many job and each has their own schedule. Therefore, we want to create a tool that can help students manage their job hunting status more easily. The application is designed to be simple and easy to use with a Kanban board. User can easily drag and drop the application to the appropriate status. The application also allows user to enter information about the applied position."
+  },
+  "projectLink": [
+    {
+      "title": "Website",
+      "name": "Naitei Journey",
+      "link": "https://naitei-journey.vercel.app/"
+    },
+    {
+      "title": "Source",
+      "name": "GitHub",
+      "link": "https://github.com/chanon-mike/naitei-journey"
+    },
+    {
+      "title": "Demo",
+      "name": "YouTube",
+      "link": "https://www.youtube.com/watch?v=cjXLNUXjS8U"
+    },
+    {
+      "title": "Presentation",
+      "name": "First Round - Geekten 2023",
+      "link": "https://drive.google.com/file/d/1zswW8g6aLywxphShpBWBJPh7SLemN3t-/view?usp=sharing"
+    }
+  ]
+}

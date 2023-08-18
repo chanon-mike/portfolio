@@ -1,0 +1,19 @@
+{
+  "challenges": "課題",
+  "description": {
+    "1": "オンラインで2人のプレイヤーが対戦できるWebアプリです。ユーザがログインした後に部屋を作成でき、他のユーザーが部屋にジョインすることができます。また、他の部屋の対戦を見ることもできます。",
+    "2": "このアプリはINIAD Developerサークルで作成しました。ゴールはリアルタイムオンライン機能を作成することです。チャレンジはFastify、Frourio、Firebase、Prismaなど今回のテックスタックはほぼ初めてということです。また、オンライン機能とリアルタイム機能も初めて挑戦しました。"
+  },
+  "projectLink": [
+    {
+      "title": "Website",
+      "name": "Online Othello",
+      "link": "https://online-othello-frontend.onrender.com/"
+    },
+    {
+      "title": "Source",
+      "name": "GitHub",
+      "link": "https://github.com/chanon-mike/online-othello"
+    }
+  ]
+}

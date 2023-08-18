@@ -1,0 +1,25 @@
+{
+  "experienceList": [
+    {
+      "company": "株式会社CA Tech Kids",
+      "position": "プログラミングメンター",
+      "date": "2022年7月 ~ 現在",
+      "description": [
+        "小・中学生にQUREO、ScratchとUnityを教えています。",
+        "グローバルリリースのため、QUREOのプログラミング教材を日本語から英語に翻訳しています。"
+      ],
+      "imageSrc": "/company_icon/techkid_icon.webp"
+    },
+    {
+      "company": "ダイアモンドヘッド株式会社",
+      "position": "バックエンドエンジニアインターン",
+      "date": "2022年8月 ~ 2022年9月",
+      "description": [
+        "ECサイトのポイント管理システムチームに配属され、ドメイン駆動設計、Djangoなどを用いた新機能開発を行いました。",
+        "API仕様の設計変更を提案し、データを取得できるAPIのパターンを4つから8つに増やしました。",
+        "タスクの約3分の1を完了し、予定よりも1週間早く開発フェーズを終了することができました。"
+      ],
+      "imageSrc": "/company_icon/diamondhead_icon.webp"
+    }
+  ]
+}

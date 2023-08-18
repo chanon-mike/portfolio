@@ -1,0 +1,40 @@
+{
+  "challenges": "課題",
+  "description": {
+    "1": {
+      "1": "東京の公共交通機関オープンAPIを活用した遅延情報通知Webアプリ、TwitterボットとLINEボット。東京の遅延情報をリアルタイムに提供し、路線の最新ニュース、DMでの通知などを見ることができ、英語・日本語を対応しています。サービス終了前に",
+      "2": "Twitterのフォロワー数が330人",
+      "3": "を超えました。また、",
+      "4": "第4回東京公共交通機関オープンデータチャレンジに特別賞",
+      "5": "を受賞しました。"
+    },
+    "2": "日本では、遅延が起こる際に遅延情報が各提供者のサイトと駅に発表されます。しかし、発表はほとんど日本語になっており、情報は集中化されていないため、情報を観覧することが難しいです。そのため、遅延情報を簡単にまとめたサイトを作成し、よく日本人が使っているLINEとTwitterボットを開発しました。"
+  },
+  "projectLink": [
+    {
+      "title": "Award",
+      "name": "特別賞 - 第4回東京公共交通機関オープンデータチャレンジ",
+      "link": "https://tokyochallenge.odpt.org/2021/award/06.html#iniad3"
+    },
+    {
+      "title": "Source",
+      "name": "GitHub",
+      "link": "https://github.com/chanon-mike/train-delay-team14"
+    },
+    {
+      "title": "Demo",
+      "name": "YouTube",
+      "link": "https://youtu.be/BbSIhEUqbEE"
+    },
+    {
+      "title": "Presentation",
+      "name": "LT発表 - Tokyo Train Delay",
+      "link": "https://drive.google.com/file/d/1rDAJv_f4vfR9QSpTJS_72NsBAEK2xq8K/view"
+    },
+    {
+      "title": "Presentation",
+      "name": "最終発表 - Tokyo Train Delay",
+      "link": "https://drive.google.com/file/d/1H20a9v7KwEb7Z4fjw_jCsYDN_URRZPMf/view"
+    }
+  ]
+}

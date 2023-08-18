@@ -9,6 +9,7 @@
   ],
   "plugins": ["@typescript-eslint", "react"],
   "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["next.config.js", "postcss.config.js", "next-i18next.config.js"],
   "env": {
     "browser": true,
     "node": true,
@@ -28,6 +29,7 @@
     "react/self-closing-comp": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    "react/no-unknown-property": "off", // conflict with @react-three/fiber property
     "eqeqeq": "error",
     "no-param-reassign": "error",
     "object-shorthand": ["error", "always"],
@@ -36,7 +38,7 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-non-null-assertion": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
-    "complexity": ["error", 5],
+    "complexity": ["error", 7],
     "max-depth": ["error", 2],
     "max-nested-callbacks": ["error", 3],
     "max-lines": ["error", 200]

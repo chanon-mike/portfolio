@@ -1,0 +1,25 @@
+{
+  "experienceList": [
+    {
+      "company": "CA Tech Kids, Inc.",
+      "position": "Programming Mentor",
+      "date": "Jul 2022 ~ Present",
+      "description": [
+        "Teaching QUREO, Scratch, and Unity to elementary and middle school students.",
+        "Translating QUREO programming materials from Japanese to English."
+      ],
+      "imageSrc": "/company_icon/techkid_icon.webp"
+    },
+    {
+      "company": "Diamond head Co.,Ltd.",
+      "position": "Backend Developer Intern",
+      "date": "Aug 2022 ~ Sep 2022",
+      "description": [
+        "Developed new features using Domain Driven Design and Django as part of the Point Management System team for an ecommerce website.",
+        "Suggest adjustment in API design resulting in 2 times more data pattern coverage.",
+        "Completed 1/3 of the assigned tasks from the Work Breakdown Structure (WBS) which was ahead of schedule, delivering it 1 week earlier than planned."
+      ],
+      "imageSrc": "/company_icon/diamondhead_icon.webp"
+    }
+  ]
+}

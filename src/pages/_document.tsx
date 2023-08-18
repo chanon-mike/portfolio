@@ -18,7 +18,6 @@ class MyDocument extends Document<Props> {
             content="Personal portfolio fo Chanon Limpipolpaibul (chanon_mike)"
           />
           <meta name="author" content="Chanon Limpipolpaibul" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>

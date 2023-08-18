@@ -1,13 +1,15 @@
 {
   "projectList": [
     {
+      "id": "traindelay",
       "name": "Tokyo Train Delay",
-      "description": "東京の公共交通機関オープンAPIを活用した遅延情報通知Webアプリ、TwitterボットとLINEボット。Twitterのフォロワー数が330人を達成した。",
+      "description": "東京の公共交通機関オープンAPIを活用した遅延情報通知Webアプリ、TwitterボットとLINEボット。サービスのユーザーが300人を超たサービス。",
       "tech": ["Django", "Bootstrap", "MongoDB"],
       "image": "/projects/tokyo-train-delay.png",
       "link": "/projects/traindelay"
     },
     {
+      "id": "aihouse",
       "name": "AI-House Automation",
       "description": "国際寮AI-House HUB-4の夕食取り置きシステムの自動化サービス",
       "tech": [
@@ -23,6 +25,7 @@
       "link": "/projects/aihouse"
     },
     {
+      "id": "naiteijourney",
       "name": "内定Journey",
       "description": "一目で就職活動状況を把握できる就職管理アプリ。カンバンボードの形で企業の選考状況の作成、編集、削除、カードのドラグアンドドロップすることができる。",
       "tech": ["Next.js", "TypeScript", "FastAPI", "Docker"],
@@ -30,6 +33,7 @@
       "link": "/projects/naiteijourney"
     },
     {
+      "id": "onlineothello",
       "name": "Online Othello",
       "description": "オンラインで対戦できるオセロー。部屋を作成や対戦を見ることができる。",
       "tech": ["Next.js", "TypeScript", "Frourio", "Fastify", "Firebase", "Prisma", "Docker"],

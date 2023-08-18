@@ -16,7 +16,7 @@ const Page = () => {
   const { t } = useTranslation(['aihouse', 'project']);
 
   const projectList = t('projectList', { returnObjects: true, ns: 'project' });
-  const project = projectList.filter((project) => project.name === 'AI-House Automation')[0];
+  const project = projectList.filter((project) => project.id === 'aihouse')[0];
   const projectLink = t('projectLink', { returnObjects: true, ns: 'aihouse' });
 
   return (
@@ -45,7 +45,7 @@ const Page = () => {
         <p className="indent-4">{t('description.3')}</p>
       </ProjectDescription>
 
-      <ProjectExternalLink projectList={projectLink} />
+      <ProjectExternalLink projectLink={projectLink} />
 
       <div className="flex flex-col gap-2">
         <ProjectImage

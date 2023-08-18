@@ -2,31 +2,12 @@ import { Experience } from '../types';
 import { fadeIn, logoVariant } from '../utils/motion';
 import SectionWrapper from './wrapper/SectionWrapper';
 import { motion } from 'framer-motion';
-
-const experienceList: Experience[] = [
-  {
-    company: 'CA Tech Kids, Inc.',
-    position: 'Programming Mentor',
-    date: 'Jul 2022 ~ Present',
-    description: [
-      'Teaching QUREO, Scratch, and Unity to elementary and middle school students.',
-      'Translating QUREO programming materials from Japanese to English',
-    ],
-    imageSrc: '/company_icon/techkid_icon.webp',
-  },
-  {
-    company: 'Diamond head Co.,Ltd.',
-    position: 'Backend Developer Intern',
-    date: 'Aug 2022 ~ Sep 2022',
-    description: [
-      'Developed new features using Domain Driven Design and Django as part of the Point Management System team for an ecommerce website.',
-      'Completed 1/3 of the assigned tasks from the Work Breakdown Structure (WBS) which was ahead of schedule, delivering it 1 week earlier than planned.',
-    ],
-    imageSrc: '/company_icon/diamondhead_icon.webp',
-  },
-];
+import { useTranslation } from 'next-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation('experience');
+  const experienceList: Experience[] = t('experienceList', { returnObjects: true });
+
   return (
     <motion.ol
       variants={fadeIn('', '', 0, 0.3)}

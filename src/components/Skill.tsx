@@ -3,6 +3,7 @@ import { fadeIn, logoVariant, textVariant } from '../utils/motion';
 import SkillIcon from './SkillIcon';
 import SectionWrapper from './wrapper/SectionWrapper';
 import { Skill } from '../types';
+import { useTranslation } from 'next-i18next';
 
 const programmingSkills: Skill[] = [
   {
@@ -120,25 +121,26 @@ const otherSkills: Skill[] = [
 ];
 
 const Skill = () => {
+  const { t } = useTranslation('skill');
   const skillList = [
     {
-      name: 'Programming Languages',
+      name: t('programming'),
       skills: programmingSkills,
     },
     {
-      name: 'Frontend Development',
+      name: t('frontend'),
       skills: frontendSkills,
     },
     {
-      name: 'Backend Development',
+      name: t('backend'),
       skills: backendSkills,
     },
     {
-      name: 'Database',
+      name: t('database'),
       skills: databaseSkills,
     },
     {
-      name: 'Other',
+      name: t('others'),
       skills: otherSkills,
     },
   ];
@@ -150,7 +152,7 @@ const Skill = () => {
           <h1 className="font-bold text-accent">02.</h1>
           <h1 className="font-thin">Skills</h1>
         </div>
-        <h3 className="flex justify-center mb-10 font-thin text-xs">As of Aug. 2023</h3>
+        <h3 className="flex justify-center mb-10 font-thin text-xs">{t('skillTime')}</h3>
       </motion.div>
 
       <motion.h3 variants={textVariant()} />

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { HiMiniBars3BottomLeft, HiOutlineComputerDesktop } from 'react-icons/hi2';
 import type { NavLink } from '../@types';
+import { useRouter } from 'next/router';
+import { FaGlobe } from 'react-icons/fa';
 
 const navLinks: NavLink[] = [
   {
@@ -21,6 +23,9 @@ const navLinks: NavLink[] = [
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [isHover, setIsHover] = useState(false);
+  const router = useRouter();
+
+  const changeTo = router.locale === 'en' ? 'ja' : 'en';
 
   return (
     <nav className="w-full flex items-center py-5 fixed top-0 z-20 font-mono">
@@ -54,6 +59,15 @@ const Navbar = () => {
               <Link href={`/#${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
+          <li>
+            <a
+              href={`/${changeTo}/${router.asPath}`}
+              className="mt-[2px] flex flex-row text-text hover:text-accent justify-center items-center gap-1"
+            >
+              <FaGlobe className="text-xl" />
+              <p className="text-sm">{router.locale === 'en' ? 'JA' : 'EN'}</p>
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -76,6 +90,15 @@ const Navbar = () => {
                   <Link href={`/#${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href={`/${changeTo}/${router.asPath}`}
+                  className="flex flex-row text-text hover:text-accent justify-center items-center gap-2"
+                >
+                  <FaGlobe className="text-lg" />
+                  <p className="">{router.locale === 'en' ? 'Japanese' : 'English'}</p>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

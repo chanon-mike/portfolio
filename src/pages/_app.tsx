@@ -14,8 +14,6 @@ const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   const currentLocale = router.locale ?? 'en';
 
-  console.log(currentLocale);
-
   return (
     <main className={`${currentLocale === 'en' ? ubuntu.className : sawarabi.className}`}>
       <Navbar />

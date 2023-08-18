@@ -1,6 +1,7 @@
 {
   "projectList": [
     {
+      "id": "traindelay",
       "name": "Tokyo Train Delay",
       "description": "Web Application, Twitter bot and LINE bot providing train delay information in Tokyo. There was around 330 Twitter followers before service closed.",
       "tech": ["Django", "Bootstrap", "MongoDB"],
@@ -8,6 +9,7 @@
       "link": "/projects/traindelay"
     },
     {
+      "id": "aihouse",
       "name": "AI-House Automation",
       "description": "Automating dinner reservation process for AI-House HUB-4 student dormitory. ",
       "tech": [
@@ -23,6 +25,7 @@
       "link": "/projects/aihouse"
     },
     {
+      "id": "naiteijourney",
       "name": "Naitei Journey",
       "description": "Job hunting management application that allows students to grasp job hunting status at a glance. User can add, edit, delete, and easily managing job application status in the form of a Kanban board-like style.",
       "tech": ["Next.js", "TypeScript", "FastAPI", "Docker"],
@@ -30,6 +33,7 @@
       "link": "/projects/naiteijourney"
     },
     {
+      "id": "onlineothello",
       "name": "Online Othello",
       "description": "Online Othello game with lobby features. Players can create a room and invite their friends to play together.",
       "tech": ["Next.js", "TypeScript", "Frourio", "Fastify", "Firebase", "Prisma", "Docker"],

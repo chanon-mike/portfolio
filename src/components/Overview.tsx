@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import type { Bio } from '../types';
 import { fadeIn, textVariant } from '../utils/motion';
 import SectionWrapper from './wrapper/SectionWrapper';
 import { useTranslation } from 'next-i18next';
 
 const Overview = () => {
   const { t } = useTranslation('overview');
-  const bio: Bio[] = t('bio', { returnObjects: true });
+  const bio = t('bio', { returnObjects: true });
 
   return (
     <div className="flex justify-start flex-col px-10 mt-12 text-text">

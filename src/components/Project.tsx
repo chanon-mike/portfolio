@@ -1,11 +1,20 @@
 import { motion } from 'framer-motion';
 import SectionWrapper from './wrapper/SectionWrapper';
 import { logoVariant, textVariant } from '../utils/motion';
-import { Project } from '../types';
+
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
-const ProjectCard = (project: Project) => {
+type ProjectCardProps = {
+  id: string;
+  name: string;
+  description: string;
+  tech: string[];
+  image: string;
+  link: string;
+};
+
+const ProjectCard = (project: ProjectCardProps) => {
   return (
     <Link href={project.link} key={project.name}>
       <motion.div
@@ -34,7 +43,7 @@ const ProjectCard = (project: Project) => {
 
 const Project = () => {
   const { t } = useTranslation('project');
-  const projectList: Project[] = t('projectList', { returnObjects: true });
+  const projectList = t('projectList', { returnObjects: true });
 
   return (
     <>

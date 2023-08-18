@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { HiMiniBars3BottomLeft, HiOutlineComputerDesktop } from 'react-icons/hi2';
-import type { NavLink } from '../types';
+import type { NavLink } from '../@types';
 
 const navLinks: NavLink[] = [
   {

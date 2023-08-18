@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { projectList } from '../../../components/Project';
 import {
   ProjectBadgeList,
   ProjectDescription,
@@ -8,9 +7,12 @@ import {
   ProjectTitle,
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
-import type { ProjectLink } from '../../../types';
+import type { Project, ProjectLink } from '../../../@types';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../utils/motion';
+import { useTranslation } from 'next-i18next';
+import type { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const projectLink: ProjectLink[] = [
   {
@@ -35,9 +37,12 @@ const projectLink: ProjectLink[] = [
   },
 ];
 
-const project = projectList.filter((project) => project.name === 'Naitei Journey')[0];
-
 const Page = () => {
+  const { t } = useTranslation(['aihouse', 'project']);
+
+  const projectList: Project[] = t('projectList', { returnObjects: true, ns: 'project' });
+  const project = projectList.filter((project) => project.name === 'AI-House Automation')[0];
+
   return (
     <motion.div variants={fadeIn('down', '', 0, 0.25)}>
       <ProjectImage src={project.image} alt={project.name} />
@@ -92,3 +97,9 @@ const Page = () => {
 };
 
 export default PageWrapper(Page);
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', ['project', 'naiteijourney'])),
+  },
+});

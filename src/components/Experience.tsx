@@ -1,4 +1,3 @@
-import { Experience } from '../types';
 import { fadeIn, logoVariant } from '../utils/motion';
 import SectionWrapper from './wrapper/SectionWrapper';
 import { motion } from 'framer-motion';
@@ -6,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 
 const Experience = () => {
   const { t } = useTranslation('experience');
-  const experienceList: Experience[] = t('experienceList', { returnObjects: true });
+  const experienceList = t('experienceList', { returnObjects: true });
 
   return (
     <motion.ol

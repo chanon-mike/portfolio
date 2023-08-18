@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, logoVariant, textVariant } from '../utils/motion';
 import SkillIcon from './SkillIcon';
 import SectionWrapper from './wrapper/SectionWrapper';
-import { Skill } from '../types';
+import { Skill } from '../@types';
 import { useTranslation } from 'next-i18next';
 
 const programmingSkills: Skill[] = [

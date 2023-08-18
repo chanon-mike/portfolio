@@ -7,7 +7,6 @@ import {
   ProjectTitle,
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
-import type { Project, ProjectLink } from '../../../types';
 import { fadeIn } from '../../../utils/motion';
 import { useTranslation } from 'next-i18next';
 import type { GetStaticProps } from 'next';
@@ -16,9 +15,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const Page = () => {
   const { t } = useTranslation(['aihouse', 'project']);
 
-  const projectList: Project[] = t('projectList', { returnObjects: true, ns: 'project' });
+  const projectList = t('projectList', { returnObjects: true, ns: 'project' });
   const project = projectList.filter((project) => project.name === 'AI-House Automation')[0];
-  const projectLink: ProjectLink[] = t('projectLink', { returnObjects: true, ns: 'aihouse' });
+  const projectLink = t('projectLink', { returnObjects: true, ns: 'aihouse' });
 
   return (
     <motion.div variants={fadeIn('down', '', 0, 0.25)}>

@@ -8,7 +8,7 @@ import {
   ProjectTitle,
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
-import type { ProjectLink } from '../../../types';
+import type { ProjectLink } from '../../../@types';
 import { fadeIn } from '../../../utils/motion';
 
 const projectLink: ProjectLink[] = [

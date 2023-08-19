@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { appWithTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
 const sawarabi = M_PLUS_1p({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
@@ -15,14 +16,20 @@ const App = ({ Component, pageProps }: AppProps) => {
   const currentLocale = router.locale ?? 'en';
 
   return (
-    <main className={`${currentLocale === 'en' ? ubuntu.className : sawarabi.className}`}>
-      <Navbar />
-      <div className="fixed w-full h-full -z-20">
-        <StarsCanvas />
-      </div>
-      <Component {...pageProps} />
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>chanon_mike</title>
+      </Head>
+
+      <main className={`${currentLocale === 'en' ? ubuntu.className : sawarabi.className}`}>
+        <Navbar />
+        <div className="fixed w-full h-full -z-20">
+          <StarsCanvas />
+        </div>
+        <Component {...pageProps} />
+        <Footer />
+      </main>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@
     {
       "id": "traindelay",
       "name": "Tokyo Train Delay",
-      "description": "東京の公共交通機関オープンAPIを活用した遅延情報通知Webアプリ、TwitterボットとLINEボット。サービスのユーザーが300人を超たサービス。",
+      "description": "東京の公共交通機関オープンAPIを活用した遅延情報通知Webアプリ、TwitterボットとLINEボット。サービス終了前の利用者が300人を超えた。",
       "tech": ["Django", "Bootstrap", "MongoDB"],
       "image": "/projects/tokyo-train-delay.png",
       "link": "/projects/traindelay"
@@ -12,7 +12,7 @@
     {
       "id": "aihouse",
       "name": "AI-House Automation",
-      "description": "国際寮AI-House HUB-4の夕食取り置きシステムの自動化サービス",
+      "description": "国際寮AI-House HUB-4の夕食取り置きシステムの自動化サービス。",
       "tech": [
         "React",
         "TypeScript",
@@ -36,7 +36,7 @@
     {
       "id": "onlineothello",
       "name": "Online Othello",
-      "description": "オンラインで対戦できるオセロー。部屋を作成や対戦を見ることができる。",
+      "description": "オンラインで他のプレーヤーと対戦できるオセローゲーム。部屋を作成や対戦を見ることができる。",
       "tech": ["Next.js", "TypeScript", "Frourio", "Fastify", "Firebase", "Prisma", "Docker"],
       "image": "/projects/online-othello.png",
       "link": "/projects/onlineothello"

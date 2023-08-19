@@ -19,6 +19,11 @@ class MyDocument extends Document<Props> {
           />
           <meta name="author" content="Chanon Limpipolpaibul" />
           <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="keywords"
+            content="portfolio, chanon_mike, Chanon Limpipolpaibul, NextJS, Threejs, framer-motion"
+          />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

@@ -24,7 +24,6 @@ class MyDocument extends Document<Props> {
             content="portfolio, chanon_mike, Chanon Limpipolpaibul, NextJS, Threejs, framer-motion"
           />
           <link rel="icon" href="/favicon.ico" />
-          <title>chanon_mike</title>
         </Head>
         <body>
           <Main />

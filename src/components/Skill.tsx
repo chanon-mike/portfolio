@@ -19,6 +19,10 @@ const programmingSkills: Skill[] = [
     icon: '/skills_icon/TypeScript.svg',
   },
   {
+    name: 'Go',
+    icon: '/skills_icon/GoLang.svg',
+  },
+  {
     name: 'C',
     icon: '/skills_icon/C.svg',
   },
@@ -71,6 +75,10 @@ const backendSkills: Skill[] = [
   {
     name: 'Express',
     icon: '/skills_icon/ExpressJS-Dark.svg',
+  },
+  {
+    name: 'Rails',
+    icon: '/skills_icon/Rails.svg',
   },
 ];
 

@@ -1,4 +1,5 @@
 {
+  "internship": "インターンシップ",
   "experienceList": [
     {
       "company": "株式会社CA Tech Kids",
@@ -9,11 +10,54 @@
         "グローバルリリースのため、QUREOのプログラミング教材を日本語から英語に翻訳しています。"
       ],
       "imageSrc": "/company_icon/techkid_icon.webp"
+    }
+  ],
+  "internshipList": [
+    {
+      "company": "freee株式会社",
+      "position": "エンジニアインターン",
+      "date": "2023年9月（2週間）",
+      "description": [
+        "グロバールチームに配属され、ReactとGoを用いたWebアプリケーションの開発を行いました。",
+        "作業フローのUX改善で作業完了が約2倍早くなり、自然なフローに改善できました。",
+        "新機能開発を行い、UIからデータを追加できるようにしました。また、JSからTSへの移行を行いました。"
+      ],
+      "imageSrc": "/company_icon/freee_icon.png"
+    },
+    {
+      "company": "sansan株式会社",
+      "position": "サーバーサイドインターン",
+      "date": "2023年9月（1日）",
+      "description": [
+        "TypeScriptを用いたスクレイピング問題を解く。",
+        "テストケースの23/30点を通り、約20名のインターン生の中でトップ6でした。"
+      ],
+      "imageSrc": "/company_icon/sansan_icon.png"
+    },
+    {
+      "company": "株式会社エイチーム",
+      "position": "エンジニアインターン",
+      "date": "2023年8月（5日）",
+      "description": [
+        "ReactとRuby on Railsを用いたWebアプリケーションの開発を行いました。",
+        "関係者からヒアリングを実施し、新機能の提案を行いました。その後、フィードバックを受け取り、最終的にリリースに至る一連の流れを経験しました。"
+      ],
+      "imageSrc": "/company_icon/ateam_icon.jpeg"
+    },
+    {
+      "company": "株式会社ゆめみ",
+      "position": "サーバーサイドインターン",
+      "date": "2023年6月（1日）",
+      "description": [
+        "API設計のワークショップに参加し、ER図、シーケンス図、クライアントからの要件を基にAPI設計を行いました。",
+        "メンターから優秀なフィードバックをもらい、チームの代表としてプレゼンテーションを行いました。"
+      ],
+      "imageSrc": "/company_icon/yumemi_icon.png"
     },
     {
       "company": "ダイアモンドヘッド株式会社",
       "position": "バックエンドエンジニアインターン",
-      "date": "2022年8月 ~ 2022年9月",
+      "date": "2022年8月（1ヶ月）",
       "description": [
         "ECサイトのポイント管理システムチームに配属され、ドメイン駆動設計、Djangoなどを用いた新機能開発を行いました。",
         "API仕様の設計変更を提案し、データを取得できるAPIのパターンを4つから8つに増やしました。",

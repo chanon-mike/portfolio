@@ -19,14 +19,11 @@ class MyDocument extends Document<Props> {
           />
           <meta name="author" content="Chanon Limpipolpaibul" />
           <link rel="icon" href="/favicon.ico" />
-<<<<<<< Updated upstream
-=======
           <meta
             name="keywords"
             content="portfolio, chanon-mike, Chanon Limpipolpaibul, NextJS, Threejs, framer-motion"
           />
           <link rel="icon" href="/favicon.ico" />
->>>>>>> Stashed changes
         </Head>
         <body>
           <Main />

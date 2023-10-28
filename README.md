@@ -1,4 +1,4 @@
-# chanon_mike Portfolio
+# chanon-mike Portfolio
 
 ## Challenges
 

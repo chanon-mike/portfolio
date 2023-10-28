@@ -15,13 +15,13 @@ class MyDocument extends Document<Props> {
           <meta charSet="utf-8" />
           <meta
             name="description"
-            content="Personal portfolio fo Chanon Limpipolpaibul (chanon_mike)"
+            content="Personal portfolio fo Chanon Limpipolpaibul (chanon-mike)"
           />
           <meta name="author" content="Chanon Limpipolpaibul" />
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="keywords"
-            content="portfolio, chanon_mike, Chanon Limpipolpaibul, NextJS, Threejs, framer-motion"
+            content="portfolio, chanon-mike, Chanon Limpipolpaibul, NextJS, Threejs, framer-motion"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>

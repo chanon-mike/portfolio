@@ -1,12 +1,12 @@
 import type { DefaultSeoProps } from 'next-seo';
 
 const config: DefaultSeoProps = {
-  title: 'chanon_mike',
-  description: 'Personal portfolio of Chanon Limpipolpaibul (chanon_mike)',
+  title: 'chanon-mike',
+  description: 'Personal portfolio of Chanon Limpipolpaibul (chanon-mike)',
   openGraph: {
     type: 'website',
     title: 'Chanon Limpipolpaibul Portfolio',
-    description: 'Personal portfolio of Chanon Limpipolpaibul (chanon_mike)',
+    description: 'Personal portfolio of Chanon Limpipolpaibul (chanon-mike)',
     url: 'https://chanon-mike.vercel.app',
     images: [
       {
@@ -16,7 +16,7 @@ const config: DefaultSeoProps = {
         alt: 'portfolio',
       },
     ],
-    siteName: 'chanon_mike',
+    siteName: 'chanon-mike',
   },
 };
 

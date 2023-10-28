@@ -49,7 +49,7 @@ const Navbar = () => {
             />
           </span>
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 pr-2 border-r-white">
-            chanon_mike
+            chanon-mike
           </h1>
         </Link>
 

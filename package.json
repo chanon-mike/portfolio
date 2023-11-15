@@ -30,6 +30,7 @@
     "three": "^0.155.0"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.18",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",

@@ -8,6 +8,7 @@ import { appWithTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../../next-seo.config';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
 const sawarabi = M_PLUS_1p({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
@@ -19,6 +20,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DefaultSeo {...SEO} />
+      <GoogleAnalytics />
 
       <main className={`${currentLocale === 'en' ? ubuntu.className : sawarabi.className}`}>
         <Navbar />

@@ -5,7 +5,7 @@ const Footer = () => {
   const thisYear = new Date().getFullYear();
   return (
     <footer className="flex flex-col justify-center items-center mb-10">
-      <Link href="https://github.com/chanon-mike" className="mb-2">
+      <Link href="https://github.com/chanon-mike/portfolio" className="mb-2">
         <FaGithub className="text-xl text-text" />
       </Link>
       <h5 className="text-text font-mono text-xs font-thin">

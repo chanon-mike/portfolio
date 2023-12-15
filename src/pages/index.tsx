@@ -1,11 +1,11 @@
 import type { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import Experience from '../components/Experience';
-import Hero from '../components/Hero';
-import Overview from '../components/Overview';
-import Project from '../components/Project';
-import Skill from '../components/Skill';
+import Experience from '@/components/Experience';
+import Hero from '@/components/Hero';
+import Overview from '@/components/Overview';
+import Project from '@/components/Project';
+import Skill from '@/components/Skill';
 
 export default function Home() {
   return (

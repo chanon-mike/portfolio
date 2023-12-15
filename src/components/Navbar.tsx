@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { FaGlobe } from 'react-icons/fa';
 import { HiMiniBars3BottomLeft, HiOutlineComputerDesktop } from 'react-icons/hi2';
 
-import type { NavLink } from '../@types';
+import type { NavLink } from '@/@types';
 
 const navLinks: NavLink[] = [
   {

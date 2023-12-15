@@ -7,11 +7,12 @@ import { useRouter } from 'next/router';
 import { appWithTranslation } from 'next-i18next';
 import { DefaultSeo } from 'next-seo';
 
+import StarsCanvas from '@/components/canvas/Stars';
+import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import Navbar from '@/components/Navbar';
+
 import SEO from '../../next-seo.config';
-import StarsCanvas from '../components/canvas/Stars';
-import Footer from '../components/Footer';
-import GoogleAnalytics from '../components/GoogleAnalytics';
-import Navbar from '../components/Navbar';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
 const sawarabi = M_PLUS_1p({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });

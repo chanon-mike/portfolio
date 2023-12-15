@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
+
+import { fadeIn } from '@/utils/motion';
 
 const Internship = () => {
   const [open, setOpen] = useState(false);

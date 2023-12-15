@@ -1,7 +1,8 @@
-import Script from 'next/script';
-import { GA_MEASUREMENT_ID, pageview } from '../utils/gtag';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 import { useEffect } from 'react';
+
+import { GA_MEASUREMENT_ID, pageview } from '@/utils/gtag';
 
 const GoogleAnalytics = () => {
   const router = useRouter();

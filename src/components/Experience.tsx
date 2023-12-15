@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
-import Internship from './Internship';
 
-import { fadeIn, logoVariant } from '../utils/motion';
+import { fadeIn, logoVariant } from '@/utils/motion';
+
+import Internship from './Internship';
 import SectionWrapper from './wrapper/SectionWrapper';
 
 const Experience = () => {

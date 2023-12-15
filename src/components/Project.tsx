@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
-import { logoVariant, textVariant } from '../utils/motion';
+import { logoVariant, textVariant } from '@/utils/motion';
+
 import SectionWrapper from './wrapper/SectionWrapper';
 
 type ProjectCardProps = {

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
-import { SiQiita } from 'react-icons/si';
 import { FaDev } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
+import { SiQiita } from 'react-icons/si';
 
 import RippleCanvas from './canvas/Ripple';
 

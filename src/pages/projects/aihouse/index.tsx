@@ -9,9 +9,9 @@ import {
   ProjectExternalLink,
   ProjectImage,
   ProjectTitle,
-} from '../../../components/ProjectDetail';
-import PageWrapper from '../../../components/wrapper/PageWrapper';
-import { fadeIn } from '../../../utils/motion';
+} from '@/components/ProjectDetail';
+import PageWrapper from '@/components/wrapper/PageWrapper';
+import { fadeIn } from '@/utils/motion';
 
 const Page = () => {
   const { t } = useTranslation(['aihouse', 'project']);

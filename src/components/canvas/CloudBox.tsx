@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber';
+import { useLayoutEffect, useRef } from 'react';
 import type * as THREE from 'three';
-import { useRef, useLayoutEffect } from 'react';
 
 type MomentData = {
   color: number;

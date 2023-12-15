@@ -2,6 +2,7 @@ import { Preload } from '@react-three/drei';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { Suspense, useCallback, useMemo, useRef } from 'react';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
+
 import CanvasLoader from './CanvasLoader';
 
 const Ripple = () => {

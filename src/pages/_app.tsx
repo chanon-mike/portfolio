@@ -1,14 +1,18 @@
-import type { AppProps } from 'next/app';
-import { Ubuntu, M_PLUS_1p } from 'next/font/google';
 import './globals.css';
-import StarsCanvas from '../components/canvas/Stars';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { appWithTranslation } from 'next-i18next';
+import './globals.css';
+
+import type { AppProps } from 'next/app';
+import { M_PLUS_1p, Ubuntu } from 'next/font/google';
 import { useRouter } from 'next/router';
+import { appWithTranslation } from 'next-i18next';
 import { DefaultSeo } from 'next-seo';
+
+import StarsCanvas from '@/components/canvas/Stars';
+import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import Navbar from '@/components/Navbar';
+
 import SEO from '../../next-seo.config';
-import GoogleAnalytics from '../components/GoogleAnalytics';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });
 const sawarabi = M_PLUS_1p({ weight: ['300', '400', '500', '700'], subsets: ['latin'] });

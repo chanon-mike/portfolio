@@ -1,8 +1,10 @@
-import { fadeIn, logoVariant } from '../utils/motion';
-import SectionWrapper from './wrapper/SectionWrapper';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
+
+import { fadeIn, logoVariant } from '@/utils/motion';
+
 import Internship from './Internship';
+import SectionWrapper from './wrapper/SectionWrapper';
 
 const Experience = () => {
   const { t } = useTranslation('experience');

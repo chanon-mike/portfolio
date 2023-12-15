@@ -7,7 +7,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["@typescript-eslint", "react", "simple-import-sort"],
   "parser": "@typescript-eslint/parser",
   "ignorePatterns": ["next.config.js", "postcss.config.js", "next-i18next.config.js"],
   "env": {
@@ -24,6 +24,7 @@
     "ecmaFeatures": { "jsx": true }
   },
   "rules": {
+    "simple-import-sort/imports": ["error"],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/self-closing-comp": "error",

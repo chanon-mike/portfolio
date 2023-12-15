@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
+import { SiQiita } from 'react-icons/si';
+import { FaDev } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 import RippleCanvas from './canvas/Ripple';
 
@@ -15,13 +18,36 @@ const Hero = () => {
             A 3rd year CS student <br className="sm:block hidden" />
             an aspiring software engineer
           </p>
-          <Link
-            href="https://github.com/chanon-mike"
-            className="flex flex-row gap-3 mt-3 items-end text-text lg:text-sm text-xs hover:text-main"
-          >
-            <FaGithub className="lg:text-2xl text-lg" />
-            Visit my GitHub
-          </Link>
+          <div className="pl-2 pt-2">
+            <Link
+              href="https://github.com/chanon-mike"
+              className="flex flex-row gap-3 mt-3 items-end text-text lg:text-sm text-xs hover:text-main"
+            >
+              <FaGithub className="lg:text-2xl text-lg" />
+              GitHub
+            </Link>
+            <Link
+              href="https://twitter.com/chanon_mike"
+              className="flex flex-row gap-3 mt-3 items-end text-text lg:text-sm text-xs hover:text-main"
+            >
+              <FaSquareXTwitter className="lg:text-2xl text-lg" />
+              Twitter (X)
+            </Link>
+            <Link
+              href="https://dev.to/chanon-mike"
+              className="flex flex-row gap-3 mt-3 items-end text-text lg:text-sm text-xs hover:text-main"
+            >
+              <FaDev className="lg:text-2xl text-lg" />
+              Dev.to
+            </Link>
+            <Link
+              href="https://qiita.com/chanon-mike"
+              className="flex flex-row gap-3 mt-3 items-end text-text lg:text-sm text-xs hover:text-main"
+            >
+              <SiQiita className="lg:text-2xl text-lg" />
+              Qiita
+            </Link>
+          </div>
         </div>
 
         <span className="w-full h-5/6 -z-10 overflow-hidden">

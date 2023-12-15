@@ -1,19 +1,64 @@
 {
+  "internship": "Internship",
   "experienceList": [
     {
       "company": "CA Tech Kids, Inc.",
       "position": "Programming Mentor",
       "date": "Jul 2022 ~ Present",
       "description": [
+        "Got a \"Best Coach\" award for 2023.",
         "Teaching QUREO, Scratch, and Unity to elementary and middle school students.",
         "Translating QUREO programming materials from Japanese to English."
       ],
       "imageSrc": "/company_icon/techkid_icon.webp"
+    }
+  ],
+  "internshipList": [
+    {
+      "company": "freee Inc.",
+      "position": "Engineer Intern",
+      "date": "Sep 2023 (2 Weeks)",
+      "description": [
+        "Joined the global team and developed new features using React and Go.",
+        "Improve the workflow UX by removing unnecessary steps in the process resulting in 2 times faster.",
+        "Add new features to the existing application resulting in being able to add the data from UI, and migrating JS to TS."
+      ],
+      "imageSrc": "/company_icon/freee_icon.png"
+    },
+    {
+      "company": "Sansan Inc.",
+      "position": "Server-side Intern",
+      "date": "Sep 2023 (1 Days)",
+      "description": [
+        "Solve the scraping problems with TypeScript.",
+        "Passed 23/30 test cases resulting in top 6 based on around 20 interns."
+      ],
+      "imageSrc": "/company_icon/sansan_icon.png"
+    },
+    {
+      "company": "Ateam Inc.",
+      "position": "Engineer Intern",
+      "date": "Aug 2023 (5 Days)",
+      "description": [
+        "Development using React and Ruby on Rails.",
+        "Hearing the feedback and needs of the client and making adjustments to the design and implementation of the application."
+      ],
+      "imageSrc": "/company_icon/ateam_icon.jpeg"
+    },
+    {
+      "company": "YUMEMI Inc.",
+      "position": "Server-side Intern",
+      "date": "Jun 2023 (1 Day)",
+      "description": [
+        "Workshop for API designing, based on ER diagram, Sequence diagram and requirements from the client.",
+        "Got excellent feedback from mentor and being representative of the team for presentation"
+      ],
+      "imageSrc": "/company_icon/yumemi_icon.png"
     },
     {
       "company": "Diamond head Co.,Ltd.",
       "position": "Backend Developer Intern",
-      "date": "Aug 2022 ~ Sep 2022",
+      "date": "Aug 2022 (1 Month)",
       "description": [
         "Developed new features using Domain Driven Design and Django as part of the Point Management System team for an ecommerce website.",
         "Suggest adjustment in API design resulting in 2 times more data pattern coverage.",

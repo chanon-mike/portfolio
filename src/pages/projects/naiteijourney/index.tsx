@@ -1,4 +1,9 @@
+import { motion } from 'framer-motion';
+import type { GetStaticProps } from 'next';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import {
   ProjectBadgeList,
   ProjectDescription,
@@ -7,11 +12,7 @@ import {
   ProjectTitle,
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
-import { motion } from 'framer-motion';
 import { fadeIn } from '../../../utils/motion';
-import { useTranslation } from 'next-i18next';
-import type { GetStaticProps } from 'next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Page = () => {
   const { t } = useTranslation(['naiteijourney', 'project']);

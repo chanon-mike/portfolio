@@ -1,4 +1,8 @@
 import { motion } from 'framer-motion';
+import type { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import {
   ProjectBadgeList,
   ProjectDescription,
@@ -8,9 +12,6 @@ import {
 } from '../../../components/ProjectDetail';
 import PageWrapper from '../../../components/wrapper/PageWrapper';
 import { fadeIn } from '../../../utils/motion';
-import { useTranslation } from 'next-i18next';
-import type { GetStaticProps } from 'next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Page = () => {
   const { t } = useTranslation(['traindelay', 'project']);

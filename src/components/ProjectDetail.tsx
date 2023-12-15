@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { HiOutlineExternalLink } from 'react-icons/hi';
+
 import type { ProjectLink } from '../@types';
 
 type ProjectDetailProps = {

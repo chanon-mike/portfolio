@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import RippleCanvas from './canvas/Ripple';
 import { FaGithub } from 'react-icons/fa';
+
+import RippleCanvas from './canvas/Ripple';
 
 const Hero = () => {
   return (

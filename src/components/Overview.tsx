@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'next-i18next';
+
 import { fadeIn, textVariant } from '../utils/motion';
 import SectionWrapper from './wrapper/SectionWrapper';
-import { useTranslation } from 'next-i18next';
 
 const Overview = () => {
   const { t } = useTranslation('overview');
